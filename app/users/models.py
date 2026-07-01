@@ -9,6 +9,6 @@ class UserModel(Base):
     username = Column(String(250))
     password = Column(String)
     is_active = Column(Boolean,default=False)
-    tasks = relationship("TaskModel", back_populates="user")
     created_at = Column(DateTime,server_default=func.now())
     updated_at = Column(DateTime,server_default=func.now(),server_onupdate=func.now())
+    tasks = relationship("TaskModel", back_populates="user")
