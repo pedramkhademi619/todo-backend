@@ -3,4 +3,6 @@
 .venv
 *.ini
 *.db
+.idea/
+__pycache__/
 
