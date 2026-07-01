@@ -1,6 +1,6 @@
 # created by virtualenv automatically
 .env
 .venv
-.ini
-.db
+*.ini
+*.db
 
