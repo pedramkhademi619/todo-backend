@@ -20,7 +20,6 @@ async def lifespan(app: FastAPI):
     Base.metadata.create_all(engine)
     yield
 
-# اضافه کردن متاداده‌ها به FastAPI
 app = FastAPI(
     title="TODO App",
     version="1.0.0",
